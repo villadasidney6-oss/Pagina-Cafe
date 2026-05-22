@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafe Sidney | Cafeteria de especialidad</title>
+  <meta name="description" content="Landing page responsiva para Cafe Sidney, una cafeteria de especialidad con bebidas artesanales, brunch y postres.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top site-navbar">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#inicio">
+        <span class="brand-mark">CS</span>
+        <span>Cafe Sidney</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Alternar navegacion">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#especialidades">Especialidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          <li class="nav-item">
+            <a class="btn btn-sm btn-outline-light rounded-pill px-3 ms-lg-2" href="#contacto">Reserva tu mesa</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="inicio" class="hero-section">
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1600&q=80" class="d-block w-100 hero-image" alt="Taza de cafe artesanal sobre una mesa">
+          <div class="carousel-caption">
+            <span class="eyebrow">Cafe de origen</span>
+            <h1>Sabores que convierten cada pausa en un ritual</h1>
+            <p>Espresso, brunch y reposteria casera en un espacio calido pensado para compartir.</p>
+            <a class="btn btn-accent btn-lg rounded-pill px-4" href="#especialidades">Descubrir menu</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1600&q=80" class="d-block w-100 hero-image" alt="Barista sirviendo cafe filtrado">
+          <div class="carousel-caption">
+            <span class="eyebrow">Baristas expertos</span>
+            <h2>Preparaciones artesanales con granos seleccionados</h2>
+            <p>Cada bebida se sirve con tecnica, aroma intenso y una experiencia visual inolvidable.</p>
+            <button class="btn btn-accent btn-lg rounded-pill px-4" data-bs-toggle="modal" data-bs-target="#promoModal">Ver promocion</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=1600&q=80" class="d-block w-100 hero-image" alt="Mesa con cafe y postres en cafeteria">
+          <div class="carousel-caption">
+            <span class="eyebrow">Momentos memorables</span>
+            <h2>El lugar ideal para trabajar, conversar y disfrutar postres</h2>
+            <p>Wi-Fi, rincones acogedores y una carta que mezcla clasicos con recetas de temporada.</p>
+            <a class="btn btn-outline-light btn-lg rounded-pill px-4" href="#contacto">Contactanos</a>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro-strip">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-7">
+            <p class="section-tag">Una cafeteria con identidad</p>
+            <h2>En Cafe Sidney mezclamos cafe de especialidad, panaderia fresca y una atmosfera elegante.</h2>
+          </div>
+          <div class="col-lg-5">
+            <p class="intro-copy mb-0">Nuestro menu fue pensado para quienes valoran ingredientes de calidad, servicio cercano y espacios visualmente atractivos para reunirse o trabajar.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="especialidades" class="py-5 section-space">
+      <div class="container">
+        <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-end gap-3 mb-4">
+          <div>
+            <p class="section-tag">Especialidades</p>
+            <h2 class="section-title mb-2">Nuestros favoritos de la casa</h2>
+            <p class="section-copy mb-0">Tres opciones que combinan aroma, textura y presentacion para enamorar a primera vista.</p>
+          </div>
+          <button class="btn btn-outline-dark rounded-pill px-4" data-bs-toggle="modal" data-bs-target="#promoModal">Conocer combo del mes</button>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+          <div class="col">
+            <article class="card h-100 specialty-card border-0 shadow-sm">
+              <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1fcef?auto=format&fit=crop&w=900&q=80" class="card-img-top" alt="Capuchino cremoso con arte latte">
+              <div class="card-body d-flex flex-column">
+                <span class="badge text-bg-light align-self-start mb-3">Bebida estrella</span>
+                <h3 class="card-title h4">Capuchino de Autor</h3>
+                <p class="card-text">Espresso doble, leche vaporizada y notas de cacao para un equilibrio suave y aromatico.</p>
+                <button class="btn btn-accent mt-auto rounded-pill" data-bs-toggle="modal" data-bs-target="#promoModal">Ver mas</button>
+              </div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="card h-100 specialty-card border-0 shadow-sm">
+              <img src="https://images.unsplash.com/photo-1481833761820-0509d3217039?auto=format&fit=crop&w=900&q=80" class="card-img-top" alt="Toast gourmet con aguacate y huevo">
+              <div class="card-body d-flex flex-column">
+                <span class="badge text-bg-light align-self-start mb-3">Brunch</span>
+                <h3 class="card-title h4">Toast Sidney</h3>
+                <p class="card-text">Pan artesanal, aguacate, huevo pochado y semillas tostadas para una pausa nutritiva y deliciosa.</p>
+                <a class="btn btn-outline-dark mt-auto rounded-pill" href="#contacto">Reservar</a>
+              </div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="card h-100 specialty-card border-0 shadow-sm">
+              <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=900&q=80" class="card-img-top" alt="Postre de chocolate servido con cafe">
+              <div class="card-body d-flex flex-column">
+                <span class="badge text-bg-light align-self-start mb-3">Postre premium</span>
+                <h3 class="card-title h4">Brownie Intenso</h3>
+                <p class="card-text">Chocolate semiamargo, nueces crocantes y helado de vainilla para cerrar con contraste perfecto.</p>
+                <a class="btn btn-outline-dark mt-auto rounded-pill" href="#experiencia">Ver ambiente</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experiencia" class="py-5 section-space alt-surface">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6">
+            <p class="section-tag">Experiencia</p>
+            <h2 class="section-title">Un espacio creado para conversaciones lentas y cafe impecable</h2>
+            <p class="section-copy">Disfruta musica suave, mesas comodas y una estetica inspirada en tonos tierra. Ideal para reuniones, lectura o trabajo remoto.</p>
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <span class="feature-pill">Wi-Fi rapido</span>
+              <span class="feature-pill">Postres artesanales</span>
+              <span class="feature-pill">Ambiente acogedor</span>
+              <span class="feature-pill">Cafe de temporada</span>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="experience-panel">
+              <div class="row g-3">
+                <div class="col-6">
+                  <div class="stat-card">
+                    <strong>+120</strong>
+                    <span>clientes felices cada fin de semana</span>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="stat-card">
+                    <strong>4.9/5</strong>
+                    <span>valoracion de nuestros visitantes</span>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="quote-card">
+                    <p>"Un lugar con mucho estilo, excelente cafe y una atencion que invita a volver."</p>
+                    <span>Clientes de Cafe Sidney</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="py-5 section-space">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-5">
+            <p class="section-tag">Contacto</p>
+            <h2 class="section-title">Reserva, solicita informacion o planea tu visita</h2>
+            <p class="section-copy">Completa el formulario y te responderemos con horarios, disponibilidad y recomendaciones del menu.</p>
+            <div class="contact-box">
+              <p><strong>Ubicacion:</strong> Calle del Aroma 25, Centro</p>
+              <p><strong>Horario:</strong> Lunes a Domingo, 7:00 a.m. - 9:00 p.m.</p>
+              <p class="mb-0"><strong>Email:</strong> hola@cafesidney.com</p>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <form class="contact-form shadow-sm">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="nombre" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="nombre" placeholder="Tu nombre completo">
+                </div>
+                <div class="col-md-6">
+                  <label for="correo" class="form-label">Correo Electronico</label>
+                  <input type="email" class="form-control" id="correo" placeholder="nombre@correo.com">
+                </div>
+                <div class="col-12">
+                  <label for="asunto" class="form-label">Asunto</label>
+                  <input type="text" class="form-control" id="asunto" placeholder="Reserva, evento o consulta">
+                </div>
+                <div class="col-12">
+                  <label for="mensaje" class="form-label">Mensaje</label>
+                  <textarea class="form-control" id="mensaje" rows="5" placeholder="Cuentanos en que podemos ayudarte"></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-accent rounded-pill px-4">Enviar</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+      <p class="mb-0">Cafe Sidney &copy; 2026. Experiencia de cafeteria con estilo y sabor.</p>
+      <a href="#inicio" class="footer-link">Volver arriba</a>
+    </div>
+  </footer>
+
+  <div class="modal fade" id="promoModal" tabindex="-1" aria-labelledby="promoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content promo-modal border-0">
+        <div class="modal-header border-0">
+          <h2 class="modal-title h4" id="promoModalLabel">Combo especial del mes</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body pt-0">
+          <p>Disfruta un capuchino de autor mas un brownie intenso con 15% de descuento durante esta semana.</p>
+          <p class="mb-0">Perfecto para compartir una tarde de cafe, estudio o reunion en nuestro espacio principal.</p>
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-outline-dark rounded-pill px-4" data-bs-dismiss="modal">Cerrar</button>
+          <a href="#contacto" class="btn btn-accent rounded-pill px-4" data-bs-dismiss="modal">Quiero reservar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,6 +1,6 @@
-# Cafe Sidney
+# Pagina-Cafe
 
-Landing page responsiva hecha con Bootstrap 5 para una cafeteria. Incluye:
+Landing page responsiva hecha con Bootstrap 5 para una cafeteria. El proyecto incluye:
 
 - Navbar responsiva y fija
 - Carousel con 3 imagenes
@@ -8,26 +8,12 @@ Landing page responsiva hecha con Bootstrap 5 para una cafeteria. Incluye:
 - Modal promocional
 - Formulario de contacto
 
-## Publicacion en GitHub Pages
+## Repositorio
 
-1. Crea un repositorio nuevo en GitHub, por ejemplo `cafe-sidney`.
-2. En esta carpeta ejecuta:
+`https://github.com/villadasidney6-oss/Pagina-Cafe.git`
 
-```bash
-git init
-git add .
-git commit -m "Proyecto inicial Cafe Sidney"
-git branch -M main
-git remote add origin https://github.com/TU-USUARIO/cafe-sidney.git
-git push -u origin main
-```
+## GitHub Pages
 
-3. En GitHub entra a `Settings > Pages`.
-4. En `Build and deployment`, selecciona:
-   `Deploy from a branch`
-5. Escoge la rama `main` y la carpeta `/root`.
-6. Guarda los cambios y espera unos minutos.
+Despues de activar Pages desde `Settings > Pages` en la rama `main` y carpeta `/root`, el sitio deberia publicarse en:
 
-Tu sitio quedara en una URL similar a:
-
-`https://TU-USUARIO.github.io/cafe-sidney/`
+`https://villadasidney6-oss.github.io/Pagina-Cafe/`
